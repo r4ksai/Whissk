@@ -7,21 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3203B5BA212AD51A00FE2DF4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3203B5B9212AD51A00FE2DF4 /* GoogleService-Info.plist */; };
+		3205E7C9215C3F9D00F39EA8 /* CleanCodeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3205E7C8215C3F9D00F39EA8 /* CleanCodeManager.swift */; };
+		3243BD80212B3C4C00D4A766 /* LocationPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3243BD7F212B3C4C00D4A766 /* LocationPicker.swift */; };
+		32587287215E44F00077F97A /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32587286215E44F00077F97A /* Login.swift */; };
+		3270AEDE212C39DD00340926 /* style.json in Resources */ = {isa = PBXBuildFile; fileRef = 3270AEDD212C39DD00340926 /* style.json */; };
+		3270AEE0212C3AEB00340926 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3270AEDF212C3AEB00340926 /* ViewController.swift */; };
+		32812D8C2135DAAC004D11C5 /* Combined ShapeFork.png in Resources */ = {isa = PBXBuildFile; fileRef = 32812D8B2135DAAB004D11C5 /* Combined ShapeFork.png */; };
+		32812D8E2135DABC004D11C5 /* Disclosure IndicatorBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 32812D8D2135DABC004D11C5 /* Disclosure IndicatorBack.png */; };
+		32812D902135DC7B004D11C5 /* Combined ShapeLocation.png in Resources */ = {isa = PBXBuildFile; fileRef = 32812D8F2135DC7B004D11C5 /* Combined ShapeLocation.png */; };
+		328C9099212C67AF00ECE490 /* Marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 328C9098212C67AE00ECE490 /* Marker.png */; };
+		328C909C212C6CCF00ECE490 /* Marker(W).png in Resources */ = {isa = PBXBuildFile; fileRef = 328C909B212C6CCF00ECE490 /* Marker(W).png */; };
+		328C909E212CA4F500ECE490 /* TypeAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328C909D212CA4F500ECE490 /* TypeAddress.swift */; };
 		32A17E7F212A7A8700A812BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A17E7E212A7A8700A812BD /* AppDelegate.swift */; };
-		32A17E81212A7A8700A812BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A17E80212A7A8700A812BD /* ViewController.swift */; };
 		32A17E84212A7A8700A812BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A17E82212A7A8700A812BD /* Main.storyboard */; };
 		32A17E86212A7A8800A812BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32A17E85212A7A8800A812BD /* Assets.xcassets */; };
 		32A17E89212A7A8800A812BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A17E87212A7A8800A812BD /* LaunchScreen.storyboard */; };
+		4AFDCB9BB560AABAE48FC00B /* Pods_Whissk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F055F90B877CBC25775B8D8 /* Pods_Whissk.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3203B5B9212AD51A00FE2DF4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3205E7C8215C3F9D00F39EA8 /* CleanCodeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanCodeManager.swift; sourceTree = "<group>"; };
+		3243BD7F212B3C4C00D4A766 /* LocationPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPicker.swift; sourceTree = "<group>"; };
+		32587286215E44F00077F97A /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		3270AEDD212C39DD00340926 /* style.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = style.json; sourceTree = "<group>"; };
+		3270AEDF212C3AEB00340926 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		32812D8B2135DAAB004D11C5 /* Combined ShapeFork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Combined ShapeFork.png"; sourceTree = "<group>"; };
+		32812D8D2135DABC004D11C5 /* Disclosure IndicatorBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Disclosure IndicatorBack.png"; sourceTree = "<group>"; };
+		32812D8F2135DC7B004D11C5 /* Combined ShapeLocation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Combined ShapeLocation.png"; sourceTree = "<group>"; };
+		328C9098212C67AE00ECE490 /* Marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Marker.png; sourceTree = "<group>"; };
+		328C909B212C6CCF00ECE490 /* Marker(W).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Marker(W).png"; sourceTree = "<group>"; };
+		328C909D212CA4F500ECE490 /* TypeAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAddress.swift; sourceTree = "<group>"; };
 		32A17E7B212A7A8700A812BD /* Whissk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Whissk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32A17E7E212A7A8700A812BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		32A17E80212A7A8700A812BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		32A17E83212A7A8700A812BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		32A17E85212A7A8800A812BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32A17E88212A7A8800A812BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32A17E8A212A7A8800A812BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49E30455684651DF6A528142 /* Pods-Whissk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whissk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Whissk/Pods-Whissk.debug.xcconfig"; sourceTree = "<group>"; };
+		7F055F90B877CBC25775B8D8 /* Pods_Whissk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Whissk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C19D9C75C147A358A69A9BC /* Pods-Whissk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whissk.release.xcconfig"; path = "Pods/Target Support Files/Pods-Whissk/Pods-Whissk.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +55,68 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AFDCB9BB560AABAE48FC00B /* Pods_Whissk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E944017E7A309DCA2D672E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F055F90B877CBC25775B8D8 /* Pods_Whissk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		325B0C59212AD75E00ABBD31 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				3203B5B9212AD51A00FE2DF4 /* GoogleService-Info.plist */,
+				32A17E8A212A7A8800A812BD /* Info.plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		325B0C5A212AD77E00ABBD31 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				32A17E82212A7A8700A812BD /* Main.storyboard */,
+				32A17E87212A7A8800A812BD /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		325B0C5B212AD79100ABBD31 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				32A17E7E212A7A8700A812BD /* AppDelegate.swift */,
+				3270AEDF212C3AEB00340926 /* ViewController.swift */,
+				3243BD7F212B3C4C00D4A766 /* LocationPicker.swift */,
+				328C909D212CA4F500ECE490 /* TypeAddress.swift */,
+				3205E7C8215C3F9D00F39EA8 /* CleanCodeManager.swift */,
+				32587286215E44F00077F97A /* Login.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		328C909A212C67D200ECE490 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				328C909B212C6CCF00ECE490 /* Marker(W).png */,
+				328C9098212C67AE00ECE490 /* Marker.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		32A17E72212A7A8700A812BD = {
 			isa = PBXGroup;
 			children = (
 				32A17E7D212A7A8700A812BD /* Whissk */,
 				32A17E7C212A7A8700A812BD /* Products */,
+				E10160DED72383DACA9FA75C /* Pods */,
+				0E944017E7A309DCA2D672E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +131,26 @@
 		32A17E7D212A7A8700A812BD /* Whissk */ = {
 			isa = PBXGroup;
 			children = (
-				32A17E7E212A7A8700A812BD /* AppDelegate.swift */,
-				32A17E80212A7A8700A812BD /* ViewController.swift */,
-				32A17E82212A7A8700A812BD /* Main.storyboard */,
+				325B0C5B212AD79100ABBD31 /* Swift */,
+				325B0C5A212AD77E00ABBD31 /* StoryBoard */,
 				32A17E85212A7A8800A812BD /* Assets.xcassets */,
-				32A17E87212A7A8800A812BD /* LaunchScreen.storyboard */,
-				32A17E8A212A7A8800A812BD /* Info.plist */,
+				32812D8F2135DC7B004D11C5 /* Combined ShapeLocation.png */,
+				32812D8B2135DAAB004D11C5 /* Combined ShapeFork.png */,
+				32812D8D2135DABC004D11C5 /* Disclosure IndicatorBack.png */,
+				328C909A212C67D200ECE490 /* Assets */,
+				325B0C59212AD75E00ABBD31 /* Plist */,
+				3270AEDD212C39DD00340926 /* style.json */,
 			);
 			path = Whissk;
+			sourceTree = "<group>";
+		};
+		E10160DED72383DACA9FA75C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				49E30455684651DF6A528142 /* Pods-Whissk.debug.xcconfig */,
+				9C19D9C75C147A358A69A9BC /* Pods-Whissk.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +160,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32A17E8D212A7A8800A812BD /* Build configuration list for PBXNativeTarget "Whissk" */;
 			buildPhases = (
+				D2B790A1C79BBDD036DA23FD /* [CP] Check Pods Manifest.lock */,
 				32A17E77212A7A8700A812BD /* Sources */,
 				32A17E78212A7A8700A812BD /* Frameworks */,
 				32A17E79212A7A8700A812BD /* Resources */,
+				BE8DA07DDB4732CFFF649914 /* [CP] Embed Pods Frameworks */,
+				76092BA2D1305B579E52CB6C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +188,7 @@
 				TargetAttributes = {
 					32A17E7A212A7A8700A812BD = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -123,20 +216,100 @@
 			buildActionMask = 2147483647;
 			files = (
 				32A17E89212A7A8800A812BD /* LaunchScreen.storyboard in Resources */,
+				3203B5BA212AD51A00FE2DF4 /* GoogleService-Info.plist in Resources */,
 				32A17E86212A7A8800A812BD /* Assets.xcassets in Resources */,
+				3270AEDE212C39DD00340926 /* style.json in Resources */,
+				32812D902135DC7B004D11C5 /* Combined ShapeLocation.png in Resources */,
+				32812D8E2135DABC004D11C5 /* Disclosure IndicatorBack.png in Resources */,
 				32A17E84212A7A8700A812BD /* Main.storyboard in Resources */,
+				32812D8C2135DAAC004D11C5 /* Combined ShapeFork.png in Resources */,
+				328C909C212C6CCF00ECE490 /* Marker(W).png in Resources */,
+				328C9099212C67AF00ECE490 /* Marker.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		76092BA2D1305B579E52CB6C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Whissk/Pods-Whissk-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Whissk/Pods-Whissk-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE8DA07DDB4732CFFF649914 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Whissk/Pods-Whissk-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Whissk/Pods-Whissk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2B790A1C79BBDD036DA23FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Whissk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		32A17E77212A7A8700A812BD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32A17E81212A7A8700A812BD /* ViewController.swift in Sources */,
+				328C909E212CA4F500ECE490 /* TypeAddress.swift in Sources */,
+				3270AEE0212C3AEB00340926 /* ViewController.swift in Sources */,
 				32A17E7F212A7A8700A812BD /* AppDelegate.swift in Sources */,
+				32587287215E44F00077F97A /* Login.swift in Sources */,
+				3205E7C9215C3F9D00F39EA8 /* CleanCodeManager.swift in Sources */,
+				3243BD80212B3C4C00D4A766 /* LocationPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,34 +451,36 @@
 		};
 		32A17E8E212A7A8800A812BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49E30455684651DF6A528142 /* Pods-Whissk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Whissk/Info.plist;
+				INFOPLIST_FILE = Whissk/Plist/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Whissk.Whissk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		32A17E8F212A7A8800A812BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C19D9C75C147A358A69A9BC /* Pods-Whissk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Whissk/Info.plist;
+				INFOPLIST_FILE = Whissk/Plist/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Whissk.Whissk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
