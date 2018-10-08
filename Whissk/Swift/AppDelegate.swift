@@ -22,6 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GMSPlacesClient.provideAPIKey("AIzaSyAJNInWczIUGT-XhNJmwXA2CkgoNGEXzas")
         GMSServices.provideAPIKey("AIzaSyAJNInWczIUGT-XhNJmwXA2CkgoNGEXzas")
         FirebaseApp.configure()
+        
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//        window?.makeKeyAndVisible()
+//        window?.rootViewController = UINavigationController(rootViewController: HomeController())
         return true
     }
 

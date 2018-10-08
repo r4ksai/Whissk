@@ -5,7 +5,17 @@
 //  Created by Sai Madhav on 20/08/18.
 //  Copyright © 2018 Sai Madhav. All rights reserved.
 //
+// Create an Error handling code so that the grapical frame can be displayed on a error
+// Import some codes into clean code manager so that the class had less code and it wont be clustered
+// Use classes and methords more for data localisation
+//The User location is found and the map view gets updated to the users location coordinate
+//The user location button is there that updates the mapview to go back again to the users location
+//Whatever the user gets can be displyed using Update camera function
+//If the user presses more details then a slide up comes asking for the users location 
+//My locations should show or not ?
+//Show users saved locations 
 
+//TODO:- Location picker to type the location so that the map points towatds that 
 import UIKit
 import GoogleMaps
 import GooglePlaces
@@ -15,11 +25,11 @@ import CoreLocation
 class LocationPicker: UIViewController,CLLocationManagerDelegate {
 
     //Variables
-    @IBOutlet weak var locationLabel: UILabel! //Location Label
+    @IBOutlet weak var locationLabel: UIButton!
     @IBOutlet weak var mapView: GMSMapView! //The Map
     let locationManager = CLLocationManager() //Location Manager
-    @IBOutlet weak var searchBar: UISearchBar! //Search bar Mostly will be taken out
-    
+
+
     //MARK:- Status bar color to white text
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -29,6 +39,28 @@ class LocationPicker: UIViewController,CLLocationManagerDelegate {
         super.viewDidLoad()
         //To set the location Manager when the view loads
         readyLocationManager()
+        
+ 
+        
+    }
+    
+    @IBAction func changeLocation(_ sender: Any) {
+        let neBoundsCorner = CLLocationCoordinate2D(latitude: 18.72220221,
+                                                    longitude: 73.60523526)
+        let swBoundsCorner = CLLocationCoordinate2D(latitude: 18.42670377,
+                                                    longitude: 74.10030667)
+        let bounds = GMSCoordinateBounds(coordinate: neBoundsCorner,
+                                         coordinate: swBoundsCorner)
+
+        let autocompleteController = GMSAutocompleteViewController()
+        autocompleteController.delegate = self
+        
+        // Set a filter to return only addresses.
+        let filter = GMSAutocompleteFilter()
+        filter.type = .address
+        autocompleteController.autocompleteFilter = filter
+        autocompleteController.autocompleteBounds = bounds
+        present(autocompleteController, animated: true, completion: nil)
     }
     
     //To use the location manager
@@ -78,6 +110,14 @@ class LocationPicker: UIViewController,CLLocationManagerDelegate {
         }
     }
     
+    //Location is used after the user gets coordinats from the address picker
+    //Check if changing camera ready map view can be changed to update this way for the users location button
+    //MARK:- Update The location after Picking
+    func updateCamera(center : CLLocationCoordinate2D){
+        let target = GMSCameraUpdate.setTarget(center)// Maps camera position to users location
+        mapView.moveCamera(target)//To animate the location of the camera from x to y
+    }
+    
     
     //This gets called when there is an error
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
@@ -96,7 +136,7 @@ class LocationPicker: UIViewController,CLLocationManagerDelegate {
             // Add a nice pop up for the error
         }
     }
-
+    
     //Checks for the users location and updates it on the mapview
     @IBAction func findUser(_ sender: Any) { //Its a button on the map that recenters the location to users
         locationManager.startUpdatingLocation()//This starts searching for the location and sends it to the deligate (Us) if the location is found
@@ -133,19 +173,22 @@ extension LocationPicker: GMSMapViewDelegate{//This is and extention of he locat
                 return
             }
             //TODO:- Find out the above lines
-            self.locationLabel.text = lines.joined(separator: ",")//This changes the location labels text into the address, joining the lines
+            self.locationLabel.setTitle(lines.joined(separator: ","), for: .normal) //This changes the location labels text into the address, joining the lines
             //The UIView gets animated
             //TODO:- Check more upon the animation topic
             UIView.animate(withDuration: 0.25) {
                 self.view.layoutIfNeeded()
+                
             }
         }
     }
     
     //This is called before the mapview is moved
+    //TODO:- Set Mapview loading
+    //set this in such a way that the location gets called if the user moves not if the user leaves the touch 
     func mapView(_ mapView: GMSMapView, willMove gesture: Bool) {
         // This shows loading when the user changes to another location (Really good for the UI) until the new location address is fetched
-        self.locationLabel.text = "Loading..."
+        self.locationLabel.setTitle("Loading...", for: .normal)
         //TODO:- Create animation in the loading label
         //The UIView gets animated
         UIView.animate(withDuration: 0.25) {
@@ -156,9 +199,38 @@ extension LocationPicker: GMSMapViewDelegate{//This is and extention of he locat
     
 }
 //For users location
-extension LocationPicker {
+extension LocationPicker : GMSAutocompleteViewControllerDelegate {
     
+    // Handle the user's selection.
+    func viewController(_ viewController: GMSAutocompleteViewController, didAutocompleteWith place: GMSPlace) {
+        // Print place info to the console.
+        updateCamera(center: place.coordinate)
+        
+        // TODO: Add code to get address components from the selected place.
+        
+        // Close the autocomplete widget.
+        dismiss(animated: true, completion: nil)
+    }
     
+    func viewController(_ viewController: GMSAutocompleteViewController, didFailAutocompleteWithError error: Error) {
+        // TODO: handle the error.
+        print("Error: ", error.localizedDescription)
+    }
+    
+    func wasCancelled(_ viewController: GMSAutocompleteViewController) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    // Show the network activity indicator.
+    func didRequestAutocompletePredictions(_ viewController: GMSAutocompleteViewController) {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+    }
+    
+    // Hide the network activity indicator.
+    func didUpdateAutocompletePredictions(_ viewController: GMSAutocompleteViewController) {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = false
+    }
+
     
 
 }
