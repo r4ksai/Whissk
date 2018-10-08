@@ -14,6 +14,7 @@
 //If the user presses more details then a slide up comes asking for the users location 
 //My locations should show or not ?
 //Show users saved locations 
+//If location is not allowed the remove my location button
 
 //TODO:- Location picker to type the location so that the map points towatds that 
 import UIKit
